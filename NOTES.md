@@ -1,11 +1,13 @@
 # Initialization
 
-`index.html`
-  -> `<app-root>Loading...</app-root>` Has _<app-root>_ in the body to load this component
-  -> `src/main.ts`
-    -> `platformBrowserDynamic().bootstrapModule(AppModule);` Initialize the app loading the AppModule
-      -> `src/app/app.module.ts` - `@NgModule({bootstrap:[AppComponent]})` The module bootstraps the required components
-        -> `src/app/app.component.ts` - `@Component({selector: 'app-root'})` The _app_ component is the one that renders the content on _<app-root>_
+```
+index.html
+  -> "<app-root>Loading...</app-root>" Has <app-root> in the body to load this component
+  -> src/main.ts
+    -> "platformBrowserDynamic().bootstrapModule(AppModule);" Initialize the app loading the AppModule
+      -> `src/app/app.module.ts` - "@NgModule({bootstrap:[AppComponent]})" The module bootstraps the required components
+        -> `src/app/app.component.ts` - "@Component({selector: 'app-root'})" The App component is the one that renders the content on <app-root>
+```
 
 # Data Binding Methods
 
